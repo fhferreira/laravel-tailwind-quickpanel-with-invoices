@@ -34,3 +34,6 @@ Basically, feel free to use and re-use any way you want.
 - Check out our adminpanel generator [QuickAdminPanel](https://quickadminpanel.com)
 - Subscribe to my [YouTube channel Laravel Business](https://www.youtube.com/channel/UCTuplgOBi6tJIlesIboymGA)
 - Enroll in my [Laravel Online Courses](https://laraveldaily.teachable.com/)
+
+
+Added: https://github.com/LaravelDaily/laravel-invoices

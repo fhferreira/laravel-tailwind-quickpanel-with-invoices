@@ -9,6 +9,10 @@ Route::get('/home', function () {
     return redirect()->route('admin.home');
 });
 
+Route::get('invoices/1', 'InvoiceController@model1')->name('model.1');
+Route::get('invoices/2', 'InvoiceController@model2')->name('model.2');
+Route::get('invoices/3', 'InvoiceController@model3')->name('model.3');
+
 Auth::routes(['register' => false]);
 // Admin
 
@@ -37,7 +41,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'mi
     Route::resource('folders', 'FoldersController');
 });
 Route::group(['prefix' => 'profile', 'as' => 'profile.', 'namespace' => 'Auth', 'middleware' => ['auth']], function () {
-// Change password
+    // Change password
     if (file_exists(app_path('Http/Controllers/Auth/ChangePasswordController.php'))) {
         Route::get('password', 'ChangePasswordController@edit')->name('password.edit');
         Route::post('password', 'ChangePasswordController@update')->name('password.update');
